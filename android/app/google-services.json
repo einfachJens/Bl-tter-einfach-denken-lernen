@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "80185787581",
+    "firebase_url": "https://blaetter---denken-lernen-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "blaetter---denken-lernen",
+    "storage_bucket": "blaetter---denken-lernen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80185787581:android:f25207f9f023e08fad23d4",
+        "android_client_info": {
+          "package_name": "de.blaetter_denken_lernen.blaetter_denken_lernen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80185787581-d005val4notmsp9q2797v5d4lpp5lcsk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvE9uIeutKwpOgAmoUXAxOHpv0TjUyWRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80185787581-d005val4notmsp9q2797v5d4lpp5lcsk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
