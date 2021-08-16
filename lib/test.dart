@@ -30,6 +30,21 @@ class _MyPage extends State<MyPage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
             children: [
+              mainMenu()
+            ],
+        ),
+      ),
+    );
+  }
+
+  Widget mainMenu() {
+    return Form(
+      key: _formkey,
+      child: Scrollbar(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            children: [
               TextFormField(
                   decoration: InputDecoration(
                       hintText: 'Tragen sie den Namen des Items ein',
@@ -44,6 +59,7 @@ class _MyPage extends State<MyPage> {
                   )
               )
             ],
+          ),
         ),
       ),
     );
@@ -55,6 +71,5 @@ class _MyPage extends State<MyPage> {
 
     addItemToGroup(groupname, test1.name);
     createItem(test1.name);
-    test();
   }
 }
