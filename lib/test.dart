@@ -14,6 +14,7 @@ class MyPage extends StatefulWidget {
 
 class Association {
   String name = '';
+  String group = '';
 }
 
 class _MyPage extends State<MyPage> {
@@ -47,6 +48,13 @@ class _MyPage extends State<MyPage> {
             children: [
               TextFormField(
                   decoration: InputDecoration(
+                      hintText: 'Tragen sie den Namen der Gruppe ein',
+                      labelText: 'Gruppe'
+                  ),
+                  onSaved: (value) => test1.group = value
+              ),
+              TextFormField(
+                  decoration: InputDecoration(
                       hintText: 'Tragen sie den Namen des Items ein',
                       labelText: 'Name'
                   ),
@@ -69,7 +77,7 @@ class _MyPage extends State<MyPage> {
     final form = _formkey.currentState;
     form.save();
 
-    addItemToGroup(groupname, test1.name);
-    createItem(test1.name);
+    addItemToGroup(test1.group, test1.name);
+    createItem(test1.group, test1.name);
   }
 }

@@ -29,19 +29,19 @@ void addItemToGroup(groupname, item) {
 createOrUpdateItem(item) {
   _items.child(item).get().then((snapshot) {
     if (snapshot.value.lenght < 1) {
-      createItem(item);
+      // createItem(item);
     } else {
       updateItem(item);
     }
   });
 }
 
-createItem(item) {
+createItem(groupname, item) {
   _items.child(item).set(
       <String, Object>{
         "name": item,
         "groups": <String, Object>{
-          "Baum": true
+          groupname: true
         }
       }
   );
